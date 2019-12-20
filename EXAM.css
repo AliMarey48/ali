@@ -1,0 +1,189 @@
+
+body{
+    font-family: 'Oswald', sans-serif;
+    background-color:darkslategray;
+    padding: 0px;
+    margin: 0;
+}
+div{
+    margin: 0 auto;
+}
+#head_nav{
+    list-style-type: none;
+    overflow: hidden;
+    background-color:skyblue;
+    padding:0px;
+    margin: 0px;
+    position: fixed;
+    top:0;
+    width: 100%;
+    text-align: center; 
+}
+#Row1{
+    height:1000px;
+    width: 500px;
+    float:left;
+    background-color: aquamarine;
+    padding: 35px 0px;
+}
+#list-tab1{
+     height:100%;
+    width: 400px;
+    float:left;
+    padding: 35px 0px;
+    margin: 0;
+    
+}
+#head_nav_li{
+    background-color: red;
+    
+}
+.head_nav_li{
+    float:left;
+}
+.head_nav_a{
+    padding: 8px 8px;
+     font-size: 25px;
+    text-decoration: none;
+    font-weight:bold;
+    color:white;
+    display: block;
+}
+.head_nav_a:hover{
+    color:blue;
+    background-color: chartreuse;
+}
+#head_nav_f{
+    background-color: yellow;
+    color:green;
+}
+#head_nav_f:hover{
+    color:yellow;
+    background-color: green;
+}
+.head_nav_li:last-child{
+    float: right;
+}
+
+#head_nav_search{
+    height: 35px;
+    width: 350px;
+    padding:8px;
+    background-color: ivory;
+    border-radius: 7px;
+    border: none;
+    
+}
+#head_nav_button{
+     height: 35px;
+    width: 60px;
+    background-color:purple;
+    border-radius: 7px;
+    color: white;
+}
+#head_nav_button:hover{
+    background-color: orange;
+    color: black;
+}
+
+
+#head_div{
+    background-image: url(https://cdn.pixabay.com/photo/2019/11/13/12/35/anise-4623554_960_720.png);
+    width: 600px;
+    height:400px;
+    direction: inherit;
+    padding: 60px;
+    position: relative;
+    top:15em;
+    float:right;
+  
+}
+
+
+.head_form{
+    height:60px;
+    width:500px;
+    text-align: center;
+    padding:8px;
+    background-color: cadetblue;
+   
+}
+#L_label{
+    font-size: 25px;
+    color:blue;
+    float:left;
+    padding-left: 5px;
+    display: block;
+}
+.I_input{
+    padding: 4px;
+    height: 40px;
+    width: 240px;
+    float: right;
+    display: block;
+    font-size:16px;
+    background-color:lightgray;
+    color:blue;
+    border-radius: 10px;
+}
+
+#I_submit{
+    float: right;
+    height:40px;
+    width: 150px;
+    display: block;
+    color:blue;
+    background-color: crimson;
+    font-size: 20px;
+    font-weight: bold;  
+    border-radius:10px;
+}
+#I_submit:hover{
+    background-color: blueviolet;
+    color:white;
+}
+#errorMessage{
+    color: red;
+    background-color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.head_nav_a:hover:not(.active){
+    background-color: chartreuse;
+}
+.head_nav_a .active{
+    background-color:chartreuse;
+}
+.head_nav_li .right{
+    float: right;
+}
+@media screen and (max-width:800px){
+    .head_nav_li .right,
+    .head_nav_li{float: none;}
+}
+@media screen and (max-width:800px){
+    .head_nav_li:last-child,
+    .head_nav_li{float: none;}
+}
+@media screen and (max-width:800px){
+    #head_div,
+    #head_nav_li{display: none;}
+}
+
+

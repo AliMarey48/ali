@@ -1,0 +1,275 @@
+<html dir="ltr" lang="en" style="font-size: 15px;">
+    
+    <head>
+    
+    
+    <title>EXAM WEBSITE PRO</title>
+    
+    
+           <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    
+            <link rel="stylesheet" type="text/css" href="EXAM.css">
+            <link rel="icon" type="icon/image" href="20151211-00122140%20(1).jpg">
+            <meta charset="utf-8">
+            <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+            <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+                 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-                                      q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+                    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <style type="text/css">
+        # https://github.com/browserslist/browserslist#readme
+
+>= 1%
+last 1 major version
+not dead
+Chrome >= 45
+Firefox >= 38
+Edge >= 12
+Explorer >= 10
+iOS >= 9
+Safari >= 9
+Android >= 4.4
+Opera >= 30
+  </style>
+
+ </head>
+    <body>
+       
+        
+        <ul id="head_nav">
+            <li class="head_nav_li"> <div class="dropdown">
+  <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="head_nav_li">
+    home
+  </a>
+ 
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="#">Action</a>
+    <a class="dropdown-item" href="#">Another action</a>
+    <a class="dropdown-item" href="#">Something else here</a>
+  </div>
+
+                </div>  
+            </li>
+            <li class="head_nav_li"><a href="#" class="head_nav_a">Juices</a></li>
+            <li class="head_nav_li" ><a href="#" class="head_nav_a" id="head_nav_f">Foods</a></li>
+            <li class="head_nav_li"><a href="#" class="head_nav_a">BestOffers</a></li>
+            <li class="head_nav_li" ><a href="#" class="head_nav_a">Sign in</a></li>
+            <li class="head_nav_li">
+                <input type="button" id="head_nav_button" value="Search">
+                <input type="search" id="head_nav_search" placeholder="Search">
+                
+            </li>
+        
+        </ul>
+        
+       
+        
+        <div id="head_div">
+            
+            <div class="head_form">
+                <label id="L_label" for="Email">Email</label>
+                <input type="email" id="I_email" placeholder="eg.name@email.com" class="I_input">
+                
+            </div>
+            
+            
+            <div class="head_form">
+                <label id="L_label" for="phone">phone </label>
+                <input type="text" id="I_phone" placeholder="eg.0101454****" class="I_input">
+                
+            </div>
+            
+            <div class="head_form">
+                <label id="L_label" for="password">password</label>
+                <input type="password" id="I_password" placeholder="password" class="I_input">
+               
+            </div>
+            
+            
+            <div class="head_form">
+                <label id="L_label" for="confirmPassword">confirmPassword</label>
+                <input type="password" id="I_confirmPassword" placeholder="confirmPassword" class="I_input">
+                
+            </div>
+            
+            
+            
+            <div class="head_form">
+                
+                <label id="L_label" id="I_submit0"><input type="submit" id="I_submit" value="sign in"></label>
+            </div>
+            <div id="sucssedMessage" style="color: green;display: none;float:inherit;font-size: 30px;">well done</div>
+        <div id="errorMessage00"></div>
+        </div>
+        
+           <!-----
+              <br/>
+            <div class="row" id="Row1">
+  <div class="col-4">
+    <div class="list-group" id="list-tab" role="tablist">
+      <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">Home</a>
+      <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">Profile</a>
+      <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">Messages</a>
+      <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">Settings</a>
+    </div>
+  </div>
+  <div class="col-8">
+    <div class="tab-content" id="nav-tabContent">
+      <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">.....</div>
+      <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">...</div>
+      <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">...</div>
+      <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">...</div>
+    </div>
+  </div>
+</div>
+        
+    <!---    $("#I_submit").click(function(){
+           
+           var errorMessage="";
+            var sucssedMessage="";
+         
+           
+           
+           if(isEmail($("#I_email").val())==false){
+               
+               errorMessage+="<p>email is valid</p>";
+               
+           }
+           if($.isNumeric($("#I_phone").val())==false){
+               errorMessage+="<P> phone number is valid </p>";
+           }
+           if($("#I_password").val()!=$("#I_confirmPassword").val()){
+               
+               errorMessage+="<p>please reenter your password </p>";
+           }
+           
+              if($("#I_email").val()=="") {
+                sucssedMessage +="<br/>Email";
+            }
+             if($("#I_phone").val()=="") {
+                sucssedMessage +="<br/>phone";
+            }
+             if($("#I_password").val()=="") {
+                sucssedMessage +="<br/>password";
+            }
+            if($("#I_confirmPassword").val()=="") {
+                sucssedMessage +="<br/>confirmPassword";
+            }
+           if(sucssedMessage!=""){
+               errorMessage+="<P>the following field(s) are wrong"+sucssedMessage;
+           }
+           
+           
+           
+           
+             $("#errorMessage").html(errorMessage);
+           
+       });                 ---->
+    
+  
+    <br/>
+    
+    
+    
+ <div class="dropdown">
+  <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="head_nav_li">
+    Dropdown link
+  </a>
+
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+    <a class="dropdown-item" href="#">Action</a>
+    <a class="dropdown-item" href="#">Another action</a>
+    <a class="dropdown-item" href="#">Something else here</a>
+  </div>
+</div>
+        
+
+    
+    
+    
+    
+
+  
+      
+    
+    <script type="text/javascript">
+        
+      
+       
+        function isEmail(email) {
+            var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+            return regex.test(email);
+        }
+        
+        $("#I_submit").click(function(){
+            var errorMessage="";
+           
+            var validMessage="";
+            
+          
+            if(isEmail($("#I_email").val())==false){
+                
+               errorMessage+=$("#I_email").css("border","1px solid red");
+            }
+            
+            
+             if($.isNumeric($("#I_phone").val())==false){
+                
+                errorMessage+=$("#I_phone").css("border","1px solid red");
+            }
+            if($("#I_password").val()!=$("#I_confirmPassword").val()){
+                
+                errorMessage+=$("#I_confirmPassword").css("border","1px solid red");
+            }
+            
+            
+            if($("#I_email").val()==""){
+               validMessage+=$("#I_email").css("border","1px solid red");
+            }
+            
+             if($("#I_phone").val()==""){
+                validMessage+=$("#I_phone").css("border","1px solid red");
+            }
+             if($("#I_password").val()==""){
+                validMessage+=$("#I_password").css("border","1px solid red");
+            }
+             if($("I_confirmPassword").val()==""){
+                validMessage+=$("#I_confirmPassword").css("border","1px solid red");
+          
+             }
+          
+             if(validMessage!=""){
+                errorMessage+=$(".I_input").css("border","1px red solid");
+              
+            }
+            if(errorMessage!=""){
+                
+                errorMessage+=$(".I_input").css("border","1px red solid");
+            
+            }
+            
+           
+        else{
+                errorMessage+=$(".I_input").css("border","1px green solid");
+        
+        }
+          
+        });
+       
+        
+           $('.alert').alert()
+       
+        
+      
+       
+       
+       
+        
+        
+        
+        </script>
+   
+ 
+    </body>
+</html>
